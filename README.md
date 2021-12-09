@@ -1,211 +1,111 @@
-# 解放生产力! 程序员做私活必备的Java开源项目
+# smart-parking 智慧停车场项目
 
-## 前言
+#### 介绍
 
-**随着各种UI框架的的逐渐,系统界面逐渐VUE化，项目中代码生成器也可以生成统一规范的界面，代码生成的半智能开发将是新的趋势，单表数据模型和一对多数据模型的增删改查功能直接生成使用,可节省80%工作量，解放生产力。**
+基于 SpringBoot + Vue 的智能停车场项目
 
-## 简介
+#### 基础环境
 
-**SingerBoot是一款基于代码生成器的智能开发平台。引领全新的开发模式，可以帮助解决管理系统类90%的重复编码工作，让开发更多关注业务逻辑。快速提高开发效率，帮助公司节省人力成本，同时又不失灵活性。**
+JDK1.8、Maven、Mysql、IntelliJ IDEA、payCloud
 
-**SingerBoot宗旨是: 提供简单快速的Java开发平台，让公司的项目快速跑起来，让程序员尽可能专注于业务，不必纠结于项目，既保证了公司流程的保密行，又减少了开发人员的工作量。**
+#### 相关组件
 
-**它可以应用在任何J2EE项目的开发中，尤其适合企业信息管理系统（MIS）、内部办公系统（OA）、企业资源计划系统（ERP）、客户关系管理系统（CRM）等，，可以显著提高开发效率90%以上，极大降低开发成本; 而且更好的支持了SAAS系统的开发需求。**
+- [ok-admin](https://gitee.com/bobi1234/ok-admin)
+- [vue](https://cn.vuejs.org/)
+- [iView](http://v1.iviewui.com/)
+- [echarts](https://echarts.apache.org/zh/index.html)
+- clipboard
+- cropperjs
+- lightbox
+- nprogress
+- webuploader
+- ztree
 
-## 为什么选择SingerBoot?
+#### 内置功能
 
-1. **采用主流框架，容易上手; 代码生成器依赖性低,很方便的扩展能力，可完全实现二次开发。**
-2. **开发效率很高,采用代码生成器，单表数据模型和一对多(父子表)数据模型，增删改查功能自动生成，菜单/权限配置直接使用。**
-3. **页面校验自动生成(必须输入、数字校验、金额校验、时间空间等)。**
-4. **封装完善的用户基础权限、强大的数据权限、和数据字典等基础功能，直接使用无需修改。**
-5. **常用共通封装，各种工具类(定时任务,短信接口,邮件发送,Excel导出等),基本满足80%项目需求。**
-6. **先进的UI库，针对WEB UI进行标准式封装，页面统一采用Antd,前端代码使用简单清晰且便于维护。**
-7. **多种首页风格切换,支持自定义首页风格。（经典风格、Shortcut风格、ACE bootstrap风格、云桌面风格）。**
-8. **专业接口对接机制，统一采用restful接口方式，集成swagger-ui在线接口文档，Token安全验证，方便客户端对接。**
-9. **接口安全机制，可细化控制接口授权，非常简便实现不同客户端只看自己数据等控制。**
-10. **方便灵活的权限控制，权限细化管理。**
-11. **代码生成器支持resutful接口生成。**
+- 系统管理：角色管理、接口管理、系统菜单、全局配置
 
-### 联系作者
-#### 微信号: SkywalkingPro
-#### 见文末微信二维码
+- 账号管理：用户管理、合作单位
 
-## 演示地址
-```
-登录地址: https://www.skywalking.pro/common-platform
-登录账号: admin
-登录密码: 123456
-```
-若演示地址不可用，可翻到文末扫码联系作者微信或者留言
+- 系统监控：监控大屏、日志监控
 
-## 软件架构说明
+- 财务管理：订单列表
 
-### 前端技术架构
+- 停车记录：停车记录
 
-1. Antd-VUE
-2. 页面,按钮级别权限控制。
-3. 多个组件封装，调用方便。
-4. Antv图表组件。
-5. WebPack
-6. ES6
-7. 多环境打包。
-8. VUE路由，过滤器，自定义指令。
-9. 代码简洁，符合编码规范。
+- 车辆管理：车辆管理
 
-### 后端技术架构
+- 车牌识别：车牌识别
 
-1. SpringBoot2.x
-2. Shiro权限框架
-3. Redis6.X最新版
-4. MyBatis注解版
-5. MySQL6.7
-6. 分模块开发，自定义启动脚本，JVM调优
-7. 多环境,前后端完全分离。
-8. 代码生成器。
-9. orika传输对象映射器。
+- 停车场管理：停车场管理
 
-## 系统截图展示
+#### 特点
 
-### 登陆界面
+⛲ 科学计费 多种计费方案灵活切换，商场、小区、停车场等场景均适用
 
-![输入图片说明](https://singer-coder.oss-cn-chengdu.aliyuncs.com/141525_50700f2b_1808544.png "屏幕截图.png")
+⏲ 商户放行 配套商户 APP 可由商户控制经停车辆放行，加强市场安全
 
-### 用户注册
+♉ 无人值守 云端控制实现无岗亭模式下的车辆自主进出，降低人工成本
 
-![](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026153710731.png)
+⛳ 应急开闸 在意外突发情况下，管理员无需到场可随时远程进行开闸放行
 
-### 系统主页
+🍓 强兼容性 不更换原有抓拍机，可兼容市面上 90%的抓拍机品牌
 
-![image-20211026154652062](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154652062.png)
+📱 移动支付 直接使用微信支付宝等扫码支付，无需人工干预提升效率
 
-### 菜单管理
+🎫 电子小票 三轮车等无牌车可采用领取小票方式入场，全流程无缝衔接
+
+⏳ 经停追踪 搭配商户 APP，可随时调阅车辆经停记录，确保装卸货万无一失
+
+🙋 人像识别 智能人像识别系统，确保小区业主通行无阻，保障小区安全
 
 
+#### 安装教程
 
-![image-20211026154706736](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154706736.png)
+- 启动前请配置 `application-dev.properties` 中相关`mysql` 以及非启动强依赖百度人工智能。
 
-### 角色管理
+- 数据库脚本位于项目内，启动前请自行导入。
 
-![image-20211026154718805](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154718805.png)
+- 配置完成，运行`Application`中的 `main `方法。
 
-### 系统用户管理
-
-![image-20211026154828146](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154828146.png)
-
-### 系统日志
-
-![输入图片说明](https://singer-coder.oss-cn-chengdu.aliyuncs.com/141732_29a59d45_1808544.png "屏幕截图.png")
-
-### 系统监控-服务器
-
-![image-20211026154851525](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154851525.png)
-
-### 系统监控-JVM
-
-![image-20211026154943440](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154943440.png)
-
-### 系统日志
-
-![image-20211026155003660](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026155003660.png)
-
-### 请求追踪
-
-![image-20211026155016809](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026155016809.png)
+- 测试账号：admin 密码：admin
 
 
-
-## 项目代码展示
-
-### 前端VUE代码截图展示
-
-![image-20211026154147729](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154147729.png)
-
-### 后端Java代码截图展示
-
-![image-20211026154128918](https://singer-coder.oss-cn-chengdu.aliyuncs.com/image-20211026154128918.png)
-
-## 系统功能模块概要
-+ 系统主页
-  - 系统主页折线图统计
-    * 系统主页折线图统计
-    + 系统模块导航
-    
-    - 系统在线数，访问数统计
-+ 系统管理
-  - 系统用户管理
-    * 系统用户条件查询
-    + 系统用户修改
-    
-	  - 系统用户删除
-  - 系统用户新增
-  - 系统菜单管理
-    * 系统菜单条件查询
-    + 系统菜单修改(可级联修改)
-	  
-    - 系统菜单删除
-  - 系统菜单新增
-  - 系统角色管理
-    * 系统角色条件查询
-	  + 系统角色修改
-    
-    - 系统角色删除
-  - 系统角色新增
-  - 系统字典管理
-	  * 系统字典条件查询
-	  + 系统字典修改
-	  
-	  - 系统字典删除
-	- 系统字典新增
-+ 系统监控
-  - 在线用户管理
-    * 在线用户条件查询
-    
-    + 在线用户踢出
-  - 系统日志管理
-    * 系统日志条件查询
-    
-    + 系统日志分析
-  + 系统访问IP分析
-  - 系统请求追踪
-    * 请求耗时追踪
-    
-    + 请求方法追踪
-  + 请求URL追踪
-  + 请响应状态追踪
-  - 系统信息
-    * JVM信息监控
-    
-    + 服务器信息监控
+#### 演示图
 
 
+<table>
+    <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143152_4666a41a_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143228_2826d431_87650.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143257_6dcf0f44_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143427_cf1d4c3f_87650.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143450_688aef23_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143510_7737027f_87650.png"/></td>
+    </tr>
+	<tr>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143532_e108417b_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143613_a65ca0da_87650.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143701_9c521618_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143742_7c0baaf2_87650.png"/></td>
+    </tr>
 
-##  **联系作者** 
+ </tr>
 
-###  微信二维码  
+</table>
 
-![微信二维码-1](https://singer-coder.oss-cn-chengdu.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81-1.png "微信二维码-1.png")
+####  **联系作者** 
 
-### 技术交流群
+ **这是作者的微信二维码，如需本项目源代码，可扫码联系联系作者。 17381852768 微信同号**  
 
-![输入图片说明](https://singer-coder.oss-cn-chengdu.aliyuncs.com/%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81%E7%BE%A4.png "%BE%.png")
+![微信二维码-1](https://singer-coder-public.oss-cn-chengdu.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81-1.png "微信二维码-1.png")
 
-## 安装教程
+作者： 天行歌者
 
-### 后端安装方法
-
-```
-1.  mvn clean package
-2.  tar -zxvf common-platform-api.gz (解压tar包)
-3.  cd common-platform-api
-5.  sh /sbin/startup.sh dev
-```
-### 前端安装方法
-```
-1.  yarn install (安装node_moudle)
-2.  yarn start (启动)
-3.  yarn build:pro (构建生产包)
-```
-### 使用说明
-
-见上面安装方法
 
