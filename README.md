@@ -1,8 +1,20 @@
-# smart-parking 智慧停车场项目
+# 基于SpringBoot的Smart-parking 智慧停车场项目
 
 #### 介绍
 
-基于 SpringBoot + Vue 的智能停车场项目
+**基于 SpringBoot + Vue 的智能停车场项目**
+
+![登录界面](https://skywalking.pro/download/images/smart-parking/WX20230106-142455@2x.png "登录界面.png")
+
+- 系统首页
+
+![系统首页](https://skywalking.pro/download/images/smart-parking/WX20230106-142645@2x.png "系统首页.png")
+
+####  **联系作者** 
+
+ **这是作者的微信二维码，如需本项目源代码，可扫码联系联系作者。 17001380020 微信同号**  
+
+![微信二维码-1](https://singer-coder-public.oss-cn-chengdu.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81-1.png?x-oss-process=image/resize,p_50 "微信二维码-1.png")
 
 #### 基础环境
 
@@ -39,6 +51,17 @@ JDK1.8、Maven、Mysql、IntelliJ IDEA、payCloud
 
 - 停车场管理：停车场管理
 
+#### 清晰的注释
+**项目的每个类和方法，都具备清晰的注释，适合阅读，注释如下图：**
+
+**1. 类注释**
+
+![类注释](https://www.skywalking.pro/download/images/meta/WX20230206-092916@2x.png "类注释")
+
+**2. 数据库字段注释注释**
+
+![类注释](https://www.skywalking.pro/download/images/meta/WX20230206-093511@2x.png "类注释")
+
 #### 特点
 
 ⛲ 科学计费 多种计费方案灵活切换，商场、小区、停车场等场景均适用
@@ -73,39 +96,69 @@ JDK1.8、Maven、Mysql、IntelliJ IDEA、payCloud
 
 #### 演示图
 
+- 登录界面
 
-<table>
-    <tr>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143152_4666a41a_87650.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143228_2826d431_87650.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143257_6dcf0f44_87650.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143427_cf1d4c3f_87650.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143450_688aef23_87650.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143510_7737027f_87650.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143532_e108417b_87650.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143613_a65ca0da_87650.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143701_9c521618_87650.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2021/0627/143742_7c0baaf2_87650.png"/></td>
-    </tr>
+![登录界面](https://skywalking.pro/download/images/smart-parking/WX20230106-142455@2x.png "登录界面.png")
 
- </tr>
+- 系统首页
 
-</table>
+![系统首页](https://skywalking.pro/download/images/smart-parking/WX20230106-142645@2x.png "系统首页.png")
+
+- 停车场管理
+
+![停车场管理](https://skywalking.pro/download/images/smart-parking/WX20230106-142908@2x.png "停车场管理.png")
+
+![新增停车场](https://skywalking.pro/download/images/smart-parking/WX20230106-143523@2x.png "新增停车场.png")
+
+![编辑停车场](https://skywalking.pro/download/images/smart-parking/WX20230106-143610@2x.png "编辑停车场.png")
+
+- 车辆管理
+
+![车辆管理](https://skywalking.pro/download/images/smart-parking/WX20230106-143809@2x.png "车辆管理.png")
+
+- 停车记录查询
+
+![停车记录查询](https://skywalking.pro/download/images/smart-parking/WX20230106-144457@2x.png "停车记录查询.png")
+
+- 角色管理
+
+![角色管理](https://skywalking.pro/download/images/smart-parking/WX20230106-144808@2x.png "角色管理.png")
+
+- 菜单管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-144924@2x.png "菜单管理.png")
+
+- 配置管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-145011@2x.png "配置管理.png")
+
+- 统计SQL管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-145538@2x.png "统计SQL管理.png")
+
+- 订单管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-145632@2x.png "订单管理.png")
+
+- 合作单位用户管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-145712@2x.png "合作单位用户管理.png")
+
+- 合作单位管理
+
+![菜单管理](https://skywalking.pro/download/images/smart-parking/WX20230106-150404@2x.png "合作单位管理.png")
+
+- 系统日志查询
+
+![系统首页](https://skywalking.pro/download/images/smart-parking/WX20230106-150444@2x.png "系统日志查询.png")
+
 
 ####  **联系作者** 
 
- **这是作者的微信二维码，如需本项目源代码，可扫码联系联系作者。 17381852768 微信同号**  
+ **这是作者的微信二维码，如需本项目源代码，可扫码联系联系作者。 17001380020 微信同号**  
 
-![微信二维码-1](https://singer-coder-public.oss-cn-chengdu.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81-1.png "微信二维码-1.png")
+![微信二维码-1](https://singer-coder-public.oss-cn-chengdu.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81-1.png?x-oss-process=image/resize,p_50 "微信二维码-1.png")
 
-作者： 天行歌者
+**作者： 天行歌者** 
 
 
